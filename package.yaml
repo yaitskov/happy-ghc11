@@ -1,0 +1,56 @@
+name: linearlet
+version: 0.0.1
+license: BSD3
+license-file: LICENSE
+author: Daniil Iaitskov
+maintainer: dyaitskov@gmail.com
+build-type: Simple
+description: linear let in GHC
+
+ghc-options: -O2 -Wall
+
+
+language: GHC2021
+
+default-extensions:
+  - DataKinds
+  - DeriveGeneric
+  - DerivingStrategies
+  - DuplicateRecordFields
+  - LambdaCase
+  - ImportQualifiedPost
+  - NoImplicitPrelude
+  - OverloadedLabels
+  - OverloadedStrings
+  - RecordWildCards
+  - TemplateHaskell
+  - TupleSections
+  - TypeFamilies
+  - UnicodeSyntax
+  - GADTs
+  - PolyKinds
+  - RankNTypes
+  - TypeOperators
+  - TypeApplications
+
+dependencies:
+  - base
+  - commutative-semigroups
+  - ghc-trace-events
+  - linear-base
+
+library:
+  source-dirs: src
+  generated-exposed-modules:
+    - Paths_linearlet
+
+executables:
+  linearlet: &exe
+    main: Main.hs
+    source-dirs: exe
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+      - linearlet

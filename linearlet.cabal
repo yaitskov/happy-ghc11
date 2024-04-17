@@ -1,0 +1,87 @@
+cabal-version: 2.0
+
+-- This file has been generated from package.yaml by hpack version 0.36.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           linearlet
+version:        0.0.1
+description:    linear let in GHC
+author:         Daniil Iaitskov
+maintainer:     dyaitskov@gmail.com
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+
+library
+  exposed-modules:
+      Linearlet.Lib
+      Paths_linearlet
+  autogen-modules:
+      Paths_linearlet
+  hs-source-dirs:
+      src
+  default-extensions:
+      DataKinds
+      DeriveGeneric
+      DerivingStrategies
+      DuplicateRecordFields
+      LambdaCase
+      ImportQualifiedPost
+      NoImplicitPrelude
+      OverloadedLabels
+      OverloadedStrings
+      RecordWildCards
+      TemplateHaskell
+      TupleSections
+      TypeFamilies
+      UnicodeSyntax
+      GADTs
+      PolyKinds
+      RankNTypes
+      TypeOperators
+      TypeApplications
+  ghc-options: -O2 -Wall
+  build-depends:
+      base
+    , commutative-semigroups
+    , ghc-trace-events
+    , linear-base
+  default-language: GHC2021
+
+executable linearlet
+  main-is: Main.hs
+  other-modules:
+      Paths_linearlet
+  autogen-modules:
+      Paths_linearlet
+  hs-source-dirs:
+      exe
+  default-extensions:
+      DataKinds
+      DeriveGeneric
+      DerivingStrategies
+      DuplicateRecordFields
+      LambdaCase
+      ImportQualifiedPost
+      NoImplicitPrelude
+      OverloadedLabels
+      OverloadedStrings
+      RecordWildCards
+      TemplateHaskell
+      TupleSections
+      TypeFamilies
+      UnicodeSyntax
+      GADTs
+      PolyKinds
+      RankNTypes
+      TypeOperators
+      TypeApplications
+  ghc-options: -O2 -Wall -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base
+    , commutative-semigroups
+    , ghc-trace-events
+    , linear-base
+    , linearlet
+  default-language: GHC2021

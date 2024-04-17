@@ -1,0 +1,60 @@
+{
+  "nixpkgs": {
+    "branch": "master",
+    "owner": "NixOS",
+    "repo": "nixpkgs",
+    "rev": "ebdc52f921173dd6a8741e770b22ae3799e10b53",
+    "sha256": "sha256:17924p85kkgg0m40f0pv69nv17pyxl81g5nqvwn7sj440lcyb1x2",
+    "type": "tarball",
+    "url": "https://github.com/NixOS/nixpkgs/archive/ebdc52f921173dd6a8741e770b22ae3799e10b53.tar.gz",
+    "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+  },
+  "cmdargs": {
+    "branch": "ghc911",
+    "repo": "https://github.com/yaitskov/cmdargs.git",
+    "rev": "22b1860379a81540e8bdf8c5d1473ab1b7acc950",
+    "type": "git"
+  },
+  "commutative-semigroups": {
+    "branch": "test",
+    "repo": "https://github.com/yaitskov/commutative-semigroups.git",
+    "rev": "e584e356f73add640fddd69c453737cf53e020bc",
+    "type": "git"
+  },
+  "generically": {
+    "branch": "ghc911",
+    "repo": "https://github.com/yaitskov/generically.git",
+    "rev": "7f8521a87de28ff0b7d7a2282edf13a855f06579",
+    "type": "git"
+  },
+  "ghc-trace-events": {
+    "branch": "develop",
+    "repo": "https://github.com/yaitskov/ghc-trace-events.git",
+    "rev": "761ca90827ab3a16ee1c5832d8fa48d8223f4165",
+    "type": "git"
+  },
+  "primitive": {
+    "branch": "master",
+    "repo": "https://github.com/yaitskov/primitive.git",
+    "rev": "16421cac9842a9b8cb48eff33380d5ff45a83539",
+    "type": "git"
+  },
+  "splitmix": {
+    "branch": "master",
+    "repo":  "git@github.com:yaitskov/splitmix.git",
+    "rev": "1ce62328d36e4c3578521b15e5121720311b2e04",
+    "type": "git"
+  },
+   "happy": {
+     "branch": "master",
+     "repo": "https://github.com/yaitskov/happy.git",
+     "rev": "78dcc03336d74822d58b8474e9639c6281c1a422",
+     "type": "git"
+   },
+  "indexed-traversable": {
+    "branch": "master",
+    "repo": "https://github.com/yaitskov/indexed-traversable.git",
+    "rev": "abf3c54b7220c03b368b9cfffc4822b17077de6e",
+    "type": "git"
+  }
+}
